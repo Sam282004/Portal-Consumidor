@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-PortalsaludApplication<portalsalud>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.portal.portalsalud.PortalsaludApplication",
+            "projectName": "portalsalud",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

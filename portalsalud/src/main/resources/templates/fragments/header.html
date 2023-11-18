@@ -1,0 +1,18 @@
+<header class="header-main" th:fragment="header">
+    <div class="logo">
+        <a th:href="@{/home}"> <img th:src="@{../images/Recursos/Logo-Inicio-Azul.png}" alt=""></a>
+    </div>
+    <nav class="barra-navegacion">
+
+        <li><a th:href="@{/home}">Inicio</a></li>
+        <li><a href="#">Nosotros</a></li>
+        <li><a href="#">Contacto</a></li>
+
+    </nav>
+    <div class="login-main">
+
+        <li><a th:href="@{/login}">Iniciar Sesion <i class="fa-solid fa-right-to-bracket"
+                    style="color: #ffffff;"></i></a></li>
+
+    </div>
+</header>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head th:insert="fragments/head :: head"></head>
+
+<body>
+    <header th:insert="fragments/header :: header"></header>
+
+    <main class="login-paciente-main">
+        <div class="login-paciente-container">
+            <div class="ticks">Medico</div>
+            <div class="">
+                <form action="" method="post">
+                    <h1>REGISTRARME</h1>
+                    <div class="form-1 form-content">
+                        <div>
+                            <label for="">NOMBRES</label>
+                            <input type="text" name="" id="" />
+                        </div>
+                        <div>
+                            <label for="">APELLIDOS</label>
+                            <input type="text" name="" id="" />
+                        </div>
+                    </div>
+                    <div class="form-2 form-content">
+                        <div>
+                            <label for="">DNI</label>
+                            <input type="text" name="" id="" />
+                        </div>
+                        <div>
+                            <label for="">FECHA N.</label>
+                            <input type="date" name="" id="" />
+                        </div>
+                        <div>
+                            <label for="">GENERO</label>
+                            <select name="" id="">
+                                <option value="">MASCULINO</option>
+                                <option value="">FEMENINO</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-3 form-content">
+                        <div>
+                            <label for="">CORREO ELECTRONICO</label>
+                            <input type="email" name="" id="" />
+                        </div>
+                        <div>
+                            <label for="">TELF.</label>
+                            <input type="number" name="" id="" />
+                        </div>
+                    </div>
+                    <div class="form-4 form-content">
+                        <div>
+                            <label for="">ESPECIALIDAD</label>
+                            <select name="" id="">
+                                <option value="">Medicina general</option>
+                                <option value="">Pediatría</option>
+                                <option value="">Ginecología y obstetricia</option>
+                                <option value="">Cirugía</option>
+                                <option value="">Medicina interna</option>
+                                <option value="">Neurología</option>
+                                <option value="">Cardiología</option>
+                                <option value="">Oncología</option>
+                                <option value="">Oftalmología</option>
+                                <option value="">Otorrinolaringología</option>
+                                <option value="">Dermatología</option>
+                                <option value="">Urología</option>
+                                <option value="">Gastroenterología</option>
+                                <option value="">Endocrinología</option>
+                                <option value="">Neumología</option>
+                                <option value="">Reumatología</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="">CONSULTORIA / AREA</label>
+                            <select name="" id="">
+                                <option value="">Medicina ocupacional</option>
+                                <option value="">Salud ocupacional</option>
+                                <option value="">Ergonomía</option>
+                                <option value="">Seguridad laboral</option>
+                                <option value="">Medicina deportiva</option>
+                                <option value="">Fisioterapia</option>
+                                <option value="">Rehabilitación</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- <div class="form-5 form-content">
+                        <div>
+                            <label for="">NOMBRES</label>
+                            <input type="text" name="" id="">
+                        </div>
+                        <div>
+                            <label for="">APELLIDOS</label>
+                            <input type="text" name="" id="">
+                        </div>
+
+                    </div> -->
+
+                    <div class="">
+                        <input type="checkbox" />
+                        <label for="">Aceptar Terminos y Condiciones</label>
+                    </div>
+                    <div class="">
+                        <button value="INGRESAR">INGRESAR</button>
+                        <p>
+                            <a th:href="@{/register-paciente}">¿No tienes cuenta? Registrarme</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer th:insert="fragments/footer :: footer"></footer>
+</body>
+
+</html>

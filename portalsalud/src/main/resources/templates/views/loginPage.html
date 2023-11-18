@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head th:insert="fragments/head :: head"></head>
+
+<body>
+    <header th:insert="fragments/header :: header"></header>
+
+    <main class="login-main-container">
+        <div class="login-mains">
+            <div class="login-card-1 logins-cards">
+                <div class="">
+                    <h1>INICIA SESIÓN <br>
+                        o/y <br>
+                        REGISTRATE
+                    </h1>
+                </div>
+                <div>
+                    <p>
+                        Para iniciar sesión o registrarse dale <span style="color: #DC7777;">Click encima en el recuadro
+                            correspondiente </span>en nuestra plataforma, puede hacerlo con su cuenta médica o como
+                        paciente.
+                    </p>
+                </div>
+            </div>
+            <div class="login-card-2 logins-cards">
+                <a th:href="@{/login-medico}" class="login-medico"><img th:src="@{../images/Recursos/Medico-login.png}"
+                        alt="">
+                    <p>MEDICO/A</p>
+                </a>
+                <a th:href="@{/login-paciente}" class="login-paciente"><img
+                        th:src="@{../images/Recursos/Paciente-Login.png}" alt="">
+                    <p>PACIENTE</p>
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer th:insert="fragments/footer :: footer"></footer>
+</body>
+
+</html>

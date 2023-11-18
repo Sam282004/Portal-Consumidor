@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head th:insert="fragments/head :: head"></head>
+
+<body>
+    <header th:insert="fragments/header :: header"></header>
+
+    <main class="login-medico-main">
+        <div class="login-medico-container">
+
+            <div class="ticks">Medico</div>
+            <div class="form-container">
+                <form action="" method="post">
+                    <h1>INICIO DE SESION</h1>
+                    <div class="form-login-medico-1  form-login-medico">
+                        <label for="">N° IDENTIDAD / COD MED.</label>
+                        <input type="text" name="" id="">
+                    </div>
+                    <div class="form-login-medico-2  form-login-medico">
+                        <label for="">Contraseña</label>
+                        <input type="password" name="" id="">
+                    </div>
+                    <!-- <div class="form-login-medico-3  form-login-medico">
+                        <input type="checkbox">
+                        <label for="">Aceptar Terminos y Condiciones</label>
+                    </div> -->
+                    <div class="form-login-medico-4  form-login-medico">
+                        <button value="INGRESAR">INGRESAR</button>
+                        <p><a th:href="@{/register-medico}">¿No tienes cuenta? Registrarme</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer th:insert="fragments/footer :: footer"></footer>
+</body>
+
+</html>

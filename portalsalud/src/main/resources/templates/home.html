@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head th:insert="fragments/head :: head"></head>
+
+<body>
+    <header th:insert="fragments/header :: header">
+    </header>
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <!-- <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+        </div> -->
+        <div class="carousel-inner">
+            <div class="carousel-item active d-item">
+                <img th:src="@{../images/Recursos/banner-1.png}" class="d-block w-100 d-img" alt="..." />
+                <div class="carousel-caption top-0 mt-4">
+                    <div class="carousel_text">
+
+                        <h1 class="">TU SALUD MEDICA,<br>
+                            NUESTRO COMPROMISO </h1>
+                        <p>
+                            Citas médicas con un clic
+                        </p>
+                        <div style="margin-top: 30px">
+                            <a class=" btn-reproducir"><i class="fa-solid fa-file-circle-check"
+                                    style="color: #ffffff;"></i> Agendar una Cita</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button> -->
+    </div>
+
+
+    <div class="info-main">
+        <div class="img-container">
+            <img th:src="@{../Images/Recursos/Medico-inicio.jpg}" alt="">
+        </div>
+        <div class="texto-main">
+            <h1>¿QUE TE OFRECEMOS?</h1>
+            <div class="parrafo">
+                <p>Somos una empresa que ofrece un servicio de gestión de citas en línea para clínicas. Nuestro objetivo
+                    es
+                    ayudar a las clínicas a ofrecer una mejor experiencia a los pacientes, mejorar la eficiencia y
+                    aumentar
+                    la satisfacción del cliente.
+                </p>
+            </div>
+
+            <div class="">
+                <a href="#" class="btn-saber">Saber Mas</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-card-main">
+        <h1>NUESTROS BENEFICIOS</h1>
+        <div class="card-continer">
+
+            <div class="card-main">
+                <div class="card-1 caRd">
+                    <div>
+                        <img th:src="@{../images/Recursos/tiemr.png}" alt="">
+                    </div>
+                    <div class="card-text">
+                        <i class="fa-solid fa-1" style="color: #71bf23;"></i>
+                        <div class="card-info">
+                            <h1>Eficacia y Velocidad</h1>
+                            <p>permite a los pacientes programar citas de manera rápida y sencilla</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-2 caRd">
+                    <div>
+                        <img th:src="@{../images/Recursos/tiemr.png}" alt="">
+                    </div>
+                    <div class="card-text">
+                        <i class="fa-solid fa-1" style="color: #71bf23;"></i>
+                        <div class="card-info">
+                            <h1>Eficacia y Velocidad</h1>
+                            <p>permite a los pacientes programar citas de manera rápida y sencilla</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-3 caRd">
+                    <div>
+                        <img th:src="@{../images/Recursos/tiemr.png}" alt="">
+                    </div>
+                    <div class="card-text">
+                        <i class="fa-solid fa-1" style="color: #71bf23;"></i>
+                        <div class="card-info">
+                            <h1>Eficacia y Velocidad</h1>
+                            <p>permite a los pacientes programar citas de manera rápida y sencilla</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-4 caRd">
+                    <div>
+                        <img th:src="@{../images/Recursos/tiemr.png}" alt="">
+                    </div>
+                    <div class="card-text">
+                        <i class="fa-solid fa-1" style="color: #71bf23;"></i>
+                        <div class="card-info">
+                            <h1>Eficacia y Velocidad</h1>
+                            <p>permite a los pacientes programar citas de manera rápida y sencilla</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer th:insert="fragments/footer :: footer">
+    </footer>
+</body>
+
+</html>
